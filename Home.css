@@ -1,0 +1,1018 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburgerMenu{
+    cursor: pointer;
+    display: none;
+}
+.hamburger{
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background-color: #0a0238;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all ease ,0.3s;
+}
+.hamburger:nth-child(1){
+    top: -4px;
+    width: 25px;
+}
+.hamburger:nth-child(3){
+    top: 4px;
+    width: 25px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 3rem;
+    position: sticky;
+    top: 0;
+}
+.navbar h3{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #0a0238;
+    font-size: 28px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links .navlink{
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 30px;
+    color: #5a5a5a;
+    transition: all ease .55s;
+    cursor: pointer;
+
+}
+.links a:first-child{
+    border-bottom: none;
+}
+.links a:hover{
+    border-bottom: 1px solid #0a0238;
+}
+.navlinkbtn{
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background: #0a0238;
+    border: 2px solid #0a0238;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+.navlinkbtn:hover{
+    background: none;
+    color: #0a0238;
+}
+.container{
+    text-align: center;
+    margin-top: 70px;
+}
+.container h3{
+    font-size: 40px;
+    font-family: "Protest Strike";
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+.container h1{
+    font-size: 70px;
+    font-family: "protest Guerrilla";
+    padding-bottom: 10px;
+}
+.container p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.cta button{
+    padding: 10px 15px;
+    margin: 30px 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    background: #0a0238;
+    border: 2px solid #0a0238;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+.cta button:hover{
+    background: none;
+    color: #0a0238;
+    font-weight: 600;
+}
+hr {
+    border: 0.1px solid #ececec;
+    margin-top: 50px;
+}
+.project-container{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.project-container h4{
+    font-size: 26px;
+    font-family: "Protest Strike";
+    margin-bottom: 10px;
+}
+.project-container p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+}
+.my-project{
+    gap: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12%;
+    margin-bottom: 40px;
+}
+.project-image{
+    width: 100%;
+}
+.project-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.project-write{
+    width: 120%;
+    margin-right: 30px;
+}
+.project-write h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+.project-write h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.project-write p{
+    font-size: 18PX;
+    color: #5a5a5a;
+    line-height: 25PX;
+    margin-bottom: 20px;
+}
+.duration-icons{
+    display: flex;
+    /* align-items: center; */
+}
+
+.cta-button .button{
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    background: #0a0238;
+    border: 2px solid #0a0238;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .55s;
+    margin-right: 30px;
+}
+.cta-button .button:hover{
+    background: none;
+    color: #0a0238;
+    font-weight: 500;
+}
+.cta-button .button:last-child{
+    background: #B4ACE2;
+    border: 2px solid #B4ACE2;
+    color: #0a0238;
+    font-weight: 600;
+}
+.cta-button .button:last-child:hover{
+    background: none;
+    color: #0a0238;
+    font-weight: 600;
+}
+
+.about-page p{
+    margin: 0 12%;
+    line-height: 40px;
+    font-size: 23px;
+}
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: 2px solid #0a0238;
+    border-radius: 5px;
+    margin: 30px 12%;
+    padding: 0 20px;
+}
+.contact-fill input{
+    font-size: 16PX;
+    display: block;
+    margin-top: 30px;
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    border: 2px solid #a3a3a3;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.contact-fill textarea{
+    font-size: 16PX;
+    display: block;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 140px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 2px solid #a3a3a3;
+    resize: none;
+    border-radius: 2px;
+}
+.contact-fill button{
+    background: #0a0238;
+    border: 2px solid #0a0238;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+.contact-fill button:hover{
+    background: none;
+    color: #0a0238;
+    font-weight: 600;
+}
+.mail-address{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* margin-top: 30PX; */
+}
+.contact-mail{
+    margin-left: 10px;
+}
+.mail-address a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #0a0238;
+    margin-bottom: 40px;
+}
+.mail-address a i{
+    margin-bottom: 10px;
+}
+.mail-address a p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.phone {
+    font-size: 20px;
+}
+.phone a{
+    text-decoration: none;
+    color: #0a0238;
+}
+.phone a i{
+    margin-bottom: 10px;
+}
+.phone a p{
+    font-weight: 600;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+.social-media i{
+    font-size: 35px;
+    color: #5a5a5a;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+.social-media i:hover{
+    color: #0a0238;
+}
+
+
+
+/* ----MEdia query ---- */
+
+
+@media (max-width: 1300px){
+    .contact-fill input, .contact-fill textarea, .contact-fill button{
+        width: 400px;
+    }
+    .mail-address a{
+        font-size: 20px;
+    }
+    .mail-address a p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .phone {
+        font-size: 18px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        margin-top: 90px;
+        gap: 30px;
+    }
+    .social-media i{
+        font-size: 30px;
+        color: #5a5a5a;
+        cursor: pointer;
+        transition: all ease .55s;
+    }
+}
+@media (max-width: 1200px){
+    .contact-fill input, .contact-fill textarea, .contact-fill button{
+        width: 380px;
+    }
+    .mail-address a{
+        font-size: 18px;
+    }
+    .mail-address a p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        gap: 28px;
+    }
+    .social-media i{
+        font-size: 25px;
+        color: #5a5a5a;
+        cursor: pointer;
+        transition: all ease .55s;
+    }
+}
+@media (max-width: 1010px){
+    .contact-fill input, .contact-fill textarea, .contact-fill button{
+        width: 350px;
+    }
+    .mail-address a{
+        font-size: 16px;
+    }
+    .mail-address a p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .phone {
+        font-size: 14px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        gap: 25px;
+    }
+    .social-media i{
+        font-size: 22px;
+        color: #5a5a5a;
+        cursor: pointer;
+        transition: all ease .55s;
+    }
+}
+@media (max-width: 1000px){
+    .contact-fill input, .contact-fill textarea, .contact-fill button{
+        width: 300px;
+    }
+    .mail-address a{
+        font-size: 16px;
+    }
+    .mail-address a p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .phone {
+        font-size: 14px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        gap: 18px;
+    }
+    .social-media i{
+        font-size: 20px;
+        color: #5a5a5a;
+        cursor: pointer;
+        transition: all ease .55s;
+    }
+}
+@media (max-width: 800px){
+    .contact-fill input, .contact-fill textarea, .contact-fill button{
+        width: 100%;
+    }
+    .contact-me{
+        flex-wrap: wrap;
+    }
+    .contact-fill{
+        width: 100%;
+        display: block;
+    }
+    .contact-mail{
+        width: 100%;
+    }
+   .mail-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   .social-media{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    gap: 18px;
+}
+   
+}
+
+
+    @media (max-width: 800px){
+        .hamburgerMenu{
+            display: block;
+        }
+        .hamburgerMenu.active .hamburger:nth-child(2){
+            opacity: 0;
+        }
+        .hamburgerMenu.active .hamburger:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburgerMenu.active .hamburger:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .links{
+            position: fixed;
+            left: -100%;
+            top: 65px;
+            gap: 0;
+            flex-direction: column;
+            background-color: #0a0238;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .links .navlink{
+            margin: 18px 0;
+            font-size: 14px;
+            color: white;
+            font-weight: 500;
+        }
+        .links .navlinkbtn{
+            background-color: white;
+            color: #0a0238;
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            margin-left: 0;
+        }
+        .links .navlinkbtn:hover{
+            background: white;
+            color: #0a0238;
+        }
+        .links.active{
+            left: 0;
+        }
+    }
+    @media (max-width: 550px){
+        .navbar h3{
+            font-family: "Protest Guerrilla", sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #0a0238;
+            font-size: 23px;
+        }
+
+
+    }
+    @media (max-width: 500px){
+        .navbar{
+            padding: 20px 30px;
+        }
+    }
+    @media (max-width: 1200px){
+        .container h3{
+            font-size: 35px;
+            font-family: "Protest Strike";
+            letter-spacing: 3px;
+            padding-bottom: 20px;
+        }
+        .container h1{
+            font-size: 60px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            margin: 0 20px;
+            font-size: 14px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin: 20px 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 1000px){
+        .container h3{
+            font-size: 30px;
+            font-family: "Protest Strike";
+            letter-spacing: 2px;
+            padding-bottom: 15px;
+        }
+        .container h1{
+            font-size: 50px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin: 20px 10px;
+            margin-bottom: 0;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 800px){
+        .container h3{
+            font-size: 20px;
+            font-family: "Protest Strike";
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+        .container h1{
+            font-size: 40px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin: 10px 10px;
+            margin-bottom: 0;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 650px){
+        .container{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .container h3{
+            font-size: 20px;
+            font-family: "Protest Strike";
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+        .container h1{
+            font-size: 30px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin: 10px 10px;
+            margin-bottom: 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container h3{
+            font-size: 18px;
+            font-family: "Protest Strike";
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+        .container h1{
+            font-size: 25px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            margin: 0 20px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin: 10px 10px;
+            margin-bottom: 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 430px){
+        .container h3{
+            font-size: 16px;
+            font-family: "Protest Strike";
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+        .container h1{
+            font-size: 22px;
+            font-family: "protest Guerrilla";
+            padding-bottom: 10px;
+        }
+        .container p{
+            margin: 0 20px;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+        .cta button{
+            padding: 10px 15px;
+            margin-bottom: 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            background: #0a0238;
+            border: 2px solid #0a0238;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease .55s;
+        }
+    }
+    @media (max-width: 1200px){
+        .project-container{
+            margin-top: 15px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .project-container h4{
+            font-size: 24px;
+            font-family: "Protest Strike";
+            margin-bottom: 10px;
+        }
+        .project-container p{
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #5a5a5a;
+        }
+    }
+    @media (max-width: 1000px){
+        .project-container{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .project-container h4{
+            font-size: 20px;
+            font-family: "Protest Strike";
+            margin-bottom: 10px;
+        }
+        .project-container p{
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #5a5a5a;
+        }
+    }
+    @media (max-width: 800px){
+        .project-container{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-container h4{
+            font-size: 20px;
+            font-family: "Protest Strike";
+            margin-bottom: 8px;
+        }
+        .project-container p{
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #5a5a5a;
+        }
+    }
+    @media (max-width: 480px){
+        .project-container{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-container h4{
+            font-size: 18px;
+            font-family: "Protest Strike";
+            margin-bottom: 6px;
+        }
+        .project-container p{
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #5a5a5a;
+        }
+    }
+    @media (max-width: 1230px){
+        .my-project{
+            gap: 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10%;
+            margin-bottom: 40px;
+        }
+        .project-image{
+            width: 90%;
+        }
+        .project-image img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .project-write{
+            width: 100%;
+            margin-right: 30px;
+        }
+        .project-write h1{
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+        .project-write h3{
+            font-size: 17px;
+            padding-bottom: 20px;
+            font-weight: 400;
+        }
+        .project-write p{
+            font-size: 15PX;
+            color: #5a5a5a;
+            line-height: 25PX;
+            margin-bottom: 20px;
+        }
+        
+    }
+    @media (max-width: 1100px){
+        .my-project{
+            gap: 3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10%;
+            margin-bottom: 40px;
+        }
+        .project-image{
+            width: 70%;
+        }
+        .project-image img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .project-write{
+            width: 90%;
+            margin-right: 30px;
+        }
+        .project-write h1{
+            margin-bottom: 3px;
+            font-size: 28px;
+        }
+        .project-write h3{
+            font-size: 15px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+        .project-write p{
+            font-size: 14PX;
+            color: #5a5a5a;
+            margin-bottom: 10px;
+        }
+        
+    }
+    @media (max-width: 1000px){
+        .my-project{
+            gap: 2%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 8%;
+            margin-bottom: 40px;
+        }
+        .project-image{
+            width: 50%;
+        }
+        .project-image img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .project-write{
+            width: 70%;
+            margin-right: 30px;
+        }
+        .project-write h1{
+            margin-bottom: 3px;
+            font-size: 25px;
+        }
+        .project-write h3{
+            font-size: 14px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+        .project-write p{
+            font-size: 12PX;
+            color: #5a5a5a;
+            margin-bottom: 5px;
+        }
+    } 
+    @media (max-width: 850px){
+        .my-project{
+            gap: 2%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 8%;
+            margin-bottom: 40px;
+        }
+        .project-image{
+            width: 50%;
+        }
+        .project-image img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .project-write{
+            width: 60%;
+            margin-right: 30px;
+        }
+        .project-write h1{
+            margin-bottom: 3px;
+            font-size: 23px;
+        }
+        .project-write h3{
+            font-size: 12px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+        .project-write p{
+            font-size: 10PX;
+            color: #5a5a5a;
+            margin-bottom: 5px;
+        }
+        .cta-button{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    }
+    @media (max-width: 800px){
+        .my-project{
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 30px;
+            margin-bottom: 40px;
+        }
+        .project-image{
+            width: 100%;
+        }
+        .project-image img{
+            width: 100%;
+            border-radius: 3px;
+        }
+        .project-write{
+            margin: 0 30px;
+            width: 100%;
+            margin-right: 30px;
+        }
+        .project-write h1{
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        .project-write h3{
+            font-size: 15px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+        .project-write p{
+            font-size: 12PX;
+            color: #5a5a5a;
+            margin-bottom: 5px;
+        }
+        
+    }
+    @media (max-width: 1300px){
+        .about-page p{
+            margin: 0 10%;
+            line-height: 40px;
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 1110px){
+        .about-page p{
+            margin: 0 9%;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 980px){
+        .about-page p{
+            margin: 0 8%;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 850px){
+        .about-page p{
+            margin: 0 6%;
+            line-height: 40px;
+            font-size: 16px;
+        }
+    }
